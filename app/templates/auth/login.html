@@ -15,6 +15,7 @@
         <p>
             Forgot Your Password?
             <a href="{{ url_for('auth.reset_password_request') }}">Click to Reset It</a>
+            <p>{{ 'New User?' }} <a href="{{ url_for('auth.register') }}">{{ 'Click to Register!' }}</a></p>
         </p>
         <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
         <p>{{ form.submit() }}</p>

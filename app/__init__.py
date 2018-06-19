@@ -21,7 +21,7 @@ login.login_message = 'Please log in to access this page.'
 mail = Mail()
 bootstrap = Bootstrap()
 moment = Moment()
-csrf = CSRFProtect(app)
+csrf = CSRFProtect()
 
 
 
@@ -33,6 +33,7 @@ def create_app(config_class=Config):
     migrate.init_app(app, db)
     login.init_app(app)
     mail.init_app(app)
+    csrf.init_app(app)
     bootstrap.init_app(app)
     moment.init_app(app)
     bp = Blueprint('app', __name__)

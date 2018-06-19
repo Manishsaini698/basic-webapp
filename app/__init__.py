@@ -10,7 +10,7 @@ from flask_mail import Mail
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from elasticsearch import Elasticsearch
-
+from flask_wtf.csrf import CSRFProtect
 
 
 db = SQLAlchemy()
@@ -21,6 +21,7 @@ login.login_message = 'Please log in to access this page.'
 mail = Mail()
 bootstrap = Bootstrap()
 moment = Moment()
+csrf = CSRFProtect(app)
 
 
 

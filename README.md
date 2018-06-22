@@ -1,13 +1,14 @@
-# basic-webapp 
+# basic-webapp
 
-Steps you have to follow:-
+<html>
+<h2>Steps you have to follow:-</h2>
 
-1.Clone this repo
-2.Make virtual environment
-3.Activate virtual environment
-4.Install requirments using:-
-        pip install -r requirments.txt
-5.Set environment variable using:-
-        export FLASK_APP=ms.py
-6.Then run the app using:-
-        flask run
+<ol>
+  <li>Clone this repo</li> 
+  <li>Make virtual environment using command:-<br> python3 -m venv venv</li> 
+  <li>Activate virtual environment using command :-<br> source venv/bin/activate</li> 
+  <li>Install requirments using:-<br> pip install -r requirments.txt</li>
+  <li>Set environment variable using:-<br> export FLASK_APP=ms.py</li>
+  <li>Then run the app using:-<br> flask run</li>
+</ol>
+</html>
